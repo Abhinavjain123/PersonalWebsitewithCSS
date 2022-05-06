@@ -53,6 +53,16 @@ h1{
     margin-left: 41%;
     margin-top: 0;
     text-align: center;
+    animation: ani 2s ease-out;
+    position: relative;
+}
+@keyframes ani {
+    from{
+        bottom: 300px;
+    }
+    to{
+        bottom: 0px;
+    }
 }
 p#firstp{
     color: #0099aa;
@@ -60,6 +70,16 @@ p#firstp{
     font-size: 20px;
     margin:0;
     margin-left: 47%;
+    animation: ani0 2s ease-out;
+    position: relative;
+}
+@keyframes ani0 {
+    from{
+        bottom: 300px;
+    }
+    to{
+        bottom: 0px;
+    }
 }
 #c1{
     height: 110px;
@@ -67,6 +87,15 @@ p#firstp{
     margin-left: 6%;
     position: absolute;
     top: 11%;
+    animation: ani1 3s ease-out;
+}
+@keyframes ani1 {
+    from{
+        margin-left: 30%;
+    }
+    to{
+        margin-left: 6%;
+    }
 }
 #c2{
     /* display: inline-block; */
@@ -74,6 +103,15 @@ p#firstp{
     height: 110px;
     margin-left: 20%;
     position: relative;
+    animation: ani2 3s ease-out;
+}
+@keyframes ani2 {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 20%;
+    }
 }
 #m1{
     display: block;
@@ -95,6 +133,17 @@ p#firstp{
     position: absolute;
     top: 58%;
     width: 5%;
+    animation: ani3 3s ease-out;
+}
+@keyframes ani3 {
+    from{
+        top: 62%;
+        left: 41%;
+    }
+    to{
+        top: 58%;
+        left: 45%;
+    }
 }
 .caps{
     font-family: 'Sacramento', cursive;
@@ -154,13 +203,41 @@ h3{
     font-size: 150%;
     font-weight: none;
 }
-div.skill-row{
+div.skill-row-a{
     line-height: 2;
     /* margin-left: 25%;  centering*/
     margin: 100px auto; /*centering */
     text-align: left;
     width: 50%;
     font-family: sans-serif;
+    position: relative;
+    animation: ani4 3s ease-out 10s;
+}
+@keyframes ani4 {
+    from{
+        right: 800px;
+    }
+    to{
+        right: 0px;
+    }
+}
+div.skill-row-b{
+    line-height: 2;
+    /* margin-left: 25%;  centering*/
+    margin: 100px auto; /*centering */
+    text-align: left;
+    width: 50%;
+    font-family: sans-serif;
+    position: relative;
+    animation: ani5 3s ease-out 10s;
+}
+@keyframes ani5 {
+    from{
+        left: 800px;
+    }
+    to{
+        left: 0px;
+    }
 }
 p{
     font-size: 120%;
